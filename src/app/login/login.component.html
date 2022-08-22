@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <
+<img src="../../assets/download.jpg" height="80%" width="100%">
+
+        </div>
+        <div class="col-md-4 mt-3">
+<h3 class="text-success text-center">Welcome to the demo </h3>
+<form action="" class="mt-4">
+    <h5 class="text-primary mb-3">Login</h5>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="username" name="username" [(ngModel)]="username">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="password" name="password" [(ngModel)]="password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="form-floating mb-3">
+        <select class="form-select" id="floatingSelect" aria-label="Role" name="role" [(ngModel)]="role">
+          <option *ngFor="let r of roles" [value]="r">{{r}}</option>
+         
+          
+        </select>
+        <label for="floatingSelect">Works with selects</label>
+      </div>
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-outline-success me-md-2" type="button" (click)="login()">Button</button>
+      </div>
+</form>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </div>
+</div>
